@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ezequias Vaz - Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Compact layout (screen + print) */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 24px; /* reduzido (era 40px) */
+        color: #222;
+        line-height: 1.35; /* reduzido (era 1.5) */
+        font-size: 14px; /* ajuda a caber em 1 página */
+      }
+      h1 {
+        font-size: 24px; /* reduzido (era 28px) */
+        margin: 0 0 2px 0;
+      }
+      h2 {
+        font-size: 17px; /* reduzido (era 20px) */
+        margin-top: 14px; /* reduzido (era 28px) */
+        margin-bottom: 6px;
+        border-bottom: 1px solid #ddd; /* mais compacto */
+        padding-bottom: 3px;
+      }
+      h3 {
+        font-size: 14px; /* reduzido (era 16px) */
+        margin-top: 10px;
+        margin-bottom: 2px;
+      }
+      p {
+        margin: 3px 0; /* reduzido (era 6px) */
+      }
+      ul {
+        margin: 3px 0 3px 18px; /* reduzido */
+        padding: 0;
+      }
+      li {
+        margin-bottom: 3px; /* reduzido (era 6px) */
+      }
+      .header {
+        margin-bottom: 12px; /* reduzido (era 28px) */
+      }
+      .contact {
+        font-size: 13px;
+        color: #444;
+      }
+      .date {
+        font-size: 13px;
+        color: #555;
+      }
+      .company {
+        font-style: italic;
+      }
+
+      /* Print: força caber em 1 página e evita quebras ruins */
+      @media print {
+        @page {
+          size: A4;
+          margin: 12mm;
+        }
+        body {
+          margin: 0;
+          font-size: 12px; /* mais compacto ao imprimir */
+          line-height: 1.25;
+        }
+        h1 {
+          font-size: 22px;
+        }
+        h2 {
+          font-size: 16px;
+          margin-top: 12px;
+        }
+        h3 {
+          font-size: 13px;
+          margin-top: 8px;
+        }
+
+        section,
+        ul,
+        li {
+          page-break-inside: avoid;
+        }
+        a {
+          color: #222;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Ezequias Vaz</h1>
+      <p>
+        <strong>Full Stack Developer - Java (Spring/Quarkus) & Angular</strong>
+      </p>
+      <p class="contact">
+        Location: Brazil (Remote - Americas time zones; open to relocation)<br />
+        Email: ezequiasvaz@hotmail.com | Phone: +55 27 99503-0381<br />
+        GitHub: https://github.com/EzequiasVaz<br />
+        LinkedIn: https://www.linkedin.com/in/ezequias-vaz/
+      </p>
+    </div>
+
+    <!-- SUMMARY -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Full Stack Developer with experience delivering secure, enterprise web
+        applications in highly regulated environments (financial services).
+        Hands-on with Java (Spring Boot/Quarkus), Angular, REST APIs, and
+        relational databases (Oracle in enterprise environments; PostgreSQL in
+        personal projects).
+      </p>
+      <p>
+        Strong focus on maintainability and delivery: clean architecture, code
+        quality, security, and effective collaboration with cross-functional
+        teams in Agile workflows. Strong testing culture aligned with SonarQube
+        quality gates (80%+ coverage) in enterprise environments.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE (moved up to appear on page 1) -->
+    <section>
+      <h2>Professional Experience</h2>
+
+      <h3>Full Stack Developer</h3>
+      <p class="company">Bank of Brazil (Banco do Brasil)</p>
+      <p class="date">Oct 2023 - Present</p>
+      <ul>
+        <li>
+          Built and maintained internal enterprise web systems in a regulated
+          financial environment, working end-to-end across backend (Java) and
+          frontend (Angular).
+        </li>
+        <li>
+          Designed and evolved REST APIs (contracts, versioning, validations),
+          integrating with Oracle Database while ensuring data consistency and
+          reliability.
+        </li>
+        <li>
+          Integrated applications with enterprise authentication/authorization
+          and implemented access control using JWT-based security, following
+          secure-by-default practices (secure coding, reviews).
+        </li>
+        <li>
+          Built and maintained automated tests across the stack (backend: JUnit
+          5/Mockito; frontend: Karma/Jasmine), consistently meeting SonarQube
+          quality gates (80%+ test coverage).
+        </li>
+        <li>
+          Contributed to CI/CD and deployments on OpenShift using GitHub
+          Actions, Jenkins, and Argo CD.
+        </li>
+      </ul>
+
+      <h3>Intern</h3>
+      <p class="company">Court of Justice of Espírito Santo (TJES)</p>
+      <p class="date">May 2021 - May 2023</p>
+      <ul>
+        <li>
+          Supported internal systems and users (triage, documentation, process
+          analysis) and collaborated with technical/administrative teams.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS (condensed) -->
+    <section>
+      <h2>Technical Skills</h2>
+
+      <h3>Backend</h3>
+      <ul>
+        <li>
+          Java; Spring Boot; Quarkus; REST APIs; JWT; Oracle Database
+          (enterprise); PostgreSQL (personal projects); Testing: JUnit 5,
+          Mockito
+        </li>
+      </ul>
+
+      <h3>Frontend</h3>
+      <ul>
+        <li>Angular; TypeScript; HTML; CSS; Testing: Karma, Jasmine</li>
+      </ul>
+
+      <h3>DevOps / Platform (Enterprise)</h3>
+      <ul>
+        <li>
+          OpenShift (Kubernetes); Jenkins; Argo CD; GitHub Actions; Docker;
+          SonarQube (quality gates)
+        </li>
+      </ul>
+
+      <h3>Tools & Practices</h3>
+      <ul>
+        <li>Git/GitHub; CI/CD; Clean Architecture; SOLID; Agile/Scrum</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          Finetria (https://finetria.com) - Personal finance management web
+          application used by real users (private repository due to
+          privacy/security). Full stack ownership: architecture, API design,
+          authentication, database modeling, and automated testing.
+        </li>
+        <li>
+          Tech: Java (Spring Boot/Quarkus), Angular, REST APIs, PostgreSQL,
+          JUnit 5, Mockito, Karma, Jasmine, Docker, GitHub Actions
+        </li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+
+      <h3>Bachelor’s Degree in Systems Analysis and Development</h3>
+      <p class="company">Multivix</p>
+      <p class="date">2019 – 2020</p>
+
+      <h3>Postgraduate Degree in Full Stack Web Development</h3>
+      <p class="company">Anhanguera Educacional</p>
+      <p class="date">Dec 2023 – May 2024</p>
+
+      <h3>Postgraduate Degree in Software Engineering</h3>
+      <p class="company">Anhanguera Educacional</p>
+      <p class="date">Jan 2024 – Jul 2024</p>
+    </section>
+
+    <!-- ADDITIONAL -->
+    <section>
+      <h2>Additional Information</h2>
+      <ul>
+        <li>
+          English (CEFR): B1 - Cambridge English Linguaskill, 158 (Listening &
+          Reading), 2025-09-20 (Test centre: Exchange Soluções em Idiomas)
+        </li>
+        <li>Open to remote opportunities (distributed teams) and relocation</li>
+      </ul>
+    </section>
+  </body>
+</html>
